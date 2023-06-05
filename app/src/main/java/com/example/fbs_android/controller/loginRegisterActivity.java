@@ -14,6 +14,7 @@ public class loginRegisterActivity extends AppCompatActivity {
 
     TextView tv;
     Button btnIniciarSessao, btnRegistar;
+    String a;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +25,7 @@ public class loginRegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(loginRegisterActivity.this,"Inciar Sessão",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(loginRegisterActivity.this, ViagensActivity.class);
+                Intent intent = new Intent(loginRegisterActivity.this, loginClienteActivity.class);
                 startActivity(intent);
             }
         });
