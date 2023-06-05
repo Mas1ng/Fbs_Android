@@ -1,4 +1,4 @@
-package adapter;
+package com.example.fbs_android.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
