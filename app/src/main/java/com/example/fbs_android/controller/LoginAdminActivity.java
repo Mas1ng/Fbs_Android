@@ -21,9 +21,9 @@ public class LoginAdminActivity extends AppCompatActivity {
         pb=findViewById(R.id.pb);
         pb.setVisibility(ProgressBar.INVISIBLE);
         tv= findViewById(R.id.tv);
-        mail= findViewById(R.id.mail);
-        passe=findViewById(R.id.passe);
-        bt=findViewById(R.id.bt);
+        mail= findViewById(R.id.nomeRegistar);
+        passe=findViewById(R.id.passRegistar);
+        bt=findViewById(R.id.btnRegistarC);
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

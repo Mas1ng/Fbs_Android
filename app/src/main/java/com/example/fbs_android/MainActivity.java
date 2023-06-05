@@ -1,11 +1,8 @@
 package com.example.fbs_android;
 
 import android.app.Activity;
-import android.app.Instrumentation;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.util.Xml;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -20,10 +17,7 @@ import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.fbs_android.controller.ClienteMainActivity;
-import com.example.fbs_android.controller.LoginAdminActivity;
-import com.example.fbs_android.controller.LoginClienteActivity;
-import com.example.fbs_android.controller.SettingsActivity;
+import com.example.fbs_android.controller.*;
 import com.example.fbs_android.dto.ErrorDto;
 import com.example.fbs_android.dto.FbsDto;
 import com.example.fbs_android.dto.Mapper;
@@ -32,8 +26,6 @@ import com.example.fbs_android.helper.Utils;
 import com.example.fbs_android.model.Fbs;
 import com.example.fbs_android.network.*;
 import com.example.fbs_android.xml.XmlHandler;
-
-import static androidx.core.content.ContextCompat.startActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -63,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
        btcliente.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Toast.makeText(MainActivity.this,"Login Clientes",Toast.LENGTH_SHORT).show();
-               Intent intent = new Intent(MainActivity.this, ClienteMainActivity.class);
+               Toast.makeText(MainActivity.this,"Login/Registar Clientes",Toast.LENGTH_SHORT).show();
+               Intent intent = new Intent(MainActivity.this, LoginRegisterActivity.class);
                startActivity(intent);
            }
        });

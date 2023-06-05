@@ -4,17 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.fbs_android.R;
 
-public class loginRegisterActivity extends AppCompatActivity {
+public class LoginRegisterActivity extends AppCompatActivity {
 
-    TextView tv;
     Button btnIniciarSessao, btnRegistar;
-    String a, b, c;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +20,8 @@ public class loginRegisterActivity extends AppCompatActivity {
         btnIniciarSessao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(loginRegisterActivity.this,"Inciar Sessão",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(loginRegisterActivity.this, loginClienteActivity.class);
+                Toast.makeText(LoginRegisterActivity.this,"Inciar Sessão",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginRegisterActivity.this, LoginClienteActivity.class);
                 startActivity(intent);
             }
         });
@@ -33,8 +29,8 @@ public class loginRegisterActivity extends AppCompatActivity {
         btnRegistar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(loginRegisterActivity.this,"Registar",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(ClienteMainActivity.this, ViagensActivity.class);
+                Toast.makeText(LoginRegisterActivity.this,"Registar",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginRegisterActivity.this, RegistarClienteActivity.class);
                 startActivity(intent);
             }
         });

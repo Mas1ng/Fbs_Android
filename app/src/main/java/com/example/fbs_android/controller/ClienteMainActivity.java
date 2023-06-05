@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.fbs_android.R;
 
 public class ClienteMainActivity extends AppCompatActivity {
-    TextView tv;
+    /*TextView tv;
     Button viagens, bilhetes, criticas;
     ProgressBar pb;
 
@@ -36,5 +36,5 @@ public class ClienteMainActivity extends AppCompatActivity {
         bilhetes = findViewById(R.id.bilhetes);
 
         criticas = findViewById(R.id.criticas);
-    }
+    }*/
 }

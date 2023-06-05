@@ -22,10 +22,9 @@
             android:layout_width="345dp"
             android:layout_height="113dp"
             android:id="@+id/btnIniciarSessao"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="250dp"/>
+            app:layout_constraintEnd_toEndOf="@+id/txtFBS"
+            app:layout_constraintStart_toStartOf="@+id/txtFBS"
+            app:layout_constraintTop_toBottomOf="@+id/txtFBS" android:layout_marginTop="30dp"/>
     <TextView
             android:text="FBS"
             android:textSize="30dp"
@@ -33,7 +32,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtFBS"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/btnIniciarSessao"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="104dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

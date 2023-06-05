@@ -14,25 +14,25 @@
             android:layout_width="match_parent"
             android:layout_height="104dp" android:id="@+id/FBS"/>
     <EditText
-            android:id="@+id/mail"
+            android:id="@+id/nomeRegistar"
             android:paddingBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="69dp"
             android:hint="Nome"/>
     <EditText
-            android:id="@+id/mail3"
+            android:id="@+id/ccRegistar"
             android:paddingBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="69dp"
             android:hint="cc"/>
     <EditText
-            android:id="@+id/mail4"
+            android:id="@+id/emailRegistar"
             android:paddingBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="69dp"
             android:hint="Digite o seu email"/>
     <EditText
-            android:id="@+id/passe"
+            android:id="@+id/passRegistar"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:hint="Digite a sua palavra passe"
@@ -45,7 +45,7 @@
             android:layout_height="50dp"
             android:id="@+id/dataCliente"/>
     <DatePicker
-            android:id="@+id/dpBirthday"
+            android:id="@+id/dataBirthday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:datePickerMode="spinner"
@@ -56,5 +56,5 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:layout_centerInParent="true"
-            android:id="@+id/bt" android:text="Registar"/>
+            android:id="@+id/btnRegistarC" android:text="Registar"/>
 </LinearLayout>
