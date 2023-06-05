@@ -23,8 +23,8 @@ public class loginRegisterActivity extends AppCompatActivity {
         btnIniciarSessao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ClienteMainActivity.this,"Inciar Sessão",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(ClienteMainActivity.this, ViagensActivity.class);
+                Toast.makeText(loginRegisterActivity.this,"Inciar Sessão",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(loginRegisterActivity.this, ViagensActivity.class);
                 startActivity(intent);
             }
         });
