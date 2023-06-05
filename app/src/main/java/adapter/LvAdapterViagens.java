@@ -52,11 +52,11 @@ public class LvAdapterViagens extends BaseAdapter {
             itemView =convertView;
         }
 
-        TextView tvName = (TextView) itemView.findViewById(R.id.tvdataC);
+        TextView tvName = (TextView) itemView.findViewById(R.id.crudViagens);
         tvName.setText(row.getName());
         TextView tvdataP = (TextView)  itemView.findViewById(R.id.tvdataP);
         tvdataP.setText(row.getDataChegada().toString()); // não sei se isto vai funcionar
-        TextView tvdataC = (TextView) itemView.findViewById(R.id.tvdataC);
+        TextView tvdataC = (TextView) itemView.findViewById(R.id.crudViagens);
         tvdataC.setText(row.getDataChegada().toString());
         return itemView;
     }

@@ -20,6 +20,7 @@ import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.fbs_android.controller.ClienteMainActivity;
 import com.example.fbs_android.controller.LoginAdminActivity;
 import com.example.fbs_android.controller.LoginClienteActivity;
 import com.example.fbs_android.controller.SettingsActivity;
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                Toast.makeText(MainActivity.this,"Login Clientes",Toast.LENGTH_SHORT).show();
-               Intent intent = new Intent(MainActivity.this, LoginClienteActivity.class);
+               Intent intent = new Intent(MainActivity.this, ClienteMainActivity.class);
                startActivity(intent);
            }
        });

@@ -19,9 +19,9 @@
               android:layout_height="wrap_content"
               android:layout_weight="1"
               android:padding="10dp"
-              android:text="Menu Admin"
+              android:text="CRUD Viagens"
               android:id="@+id/crudViagens"
-              android:textSize="16sp"
+              android:textSize="34sp"
               android:textStyle="bold"
               android:gravity="center"/>
     <Button
@@ -29,21 +29,26 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="Viagens"
+            android:text="Adicionar"
             android:id="@+id/addViagem"/>
 
     <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="Bilhetes"
+            android:text="Listar"
             android:id="@+id/listarViagem"/>
-
     <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="Clientes"
-            android:id="@+id/clientes"/>
+            android:text="Atualizar"
+            android:id="@+id/atualizarViagem"/>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Delete"
+            android:id="@+id/deleteViagem"/>
 
 </LinearLayout>

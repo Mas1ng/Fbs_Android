@@ -19,10 +19,10 @@ public class AdminMainActivity extends AppCompatActivity {
 
         pb = findViewById(R.id.pBar);
         pb.setVisibility(ProgressBar.INVISIBLE);
-        tv = findViewById(R.id.tvdataC);
-        viagens = findViewById(R.id.viagens);
+        tv = findViewById(R.id.crudViagens);
+        viagens = findViewById(R.id.addViagem);
 
-        bilhetes = findViewById(R.id.bilhetes);
+        bilhetes = findViewById(R.id.listarViagem);
 
         clientes = findViewById(R.id.clientes);
     }

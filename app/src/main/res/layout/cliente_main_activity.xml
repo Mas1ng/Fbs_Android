@@ -20,7 +20,7 @@
               android:layout_weight="1"
               android:padding="10dp"
               android:text="Menu Cliente"
-              android:id="@+id/tvdataC"
+              android:id="@+id/crudViagens"
               android:textSize="16sp"
               android:textStyle="bold"
               android:gravity="center"/>
@@ -30,20 +30,20 @@
             android:layout_weight="1"
             android:padding="10dp"
             android:text="Comprar Viagens"
-            android:id="@+id/viagens"/>
+            android:id="@+id/addViagem"/>
 
     <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
             android:text="Bilhetes"
-            android:id="@+id/bilhetes"/>
+            android:id="@+id/listarViagem"/>
 
     <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
             android:text="Criticas"
-            android:id="@+id/criticas"/>
+            android:id="@+id/deleteViagem"/>
 
 </LinearLayout>
