@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        tools:context=".controller.SettingsActivity">
+    <TextView
+            android:text="Web Service IP Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <NumberPicker android:id="@+id/np1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+        />
+        <TextView
+                android:text="."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        <NumberPicker android:id="@+id/np2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+        <TextView
+                android:text="."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        <NumberPicker android:id="@+id/np3"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+        <TextView
+                android:text="."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        <NumberPicker android:id="@+id/np4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <TextView
+            android:text="Web Service Port Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/etNumPort"
+              android:inputType="number"
+              android:text="0000"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+    <Button
+            android:text="Set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button"/>
+
+</LinearLayout>
