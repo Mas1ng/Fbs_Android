@@ -14,7 +14,7 @@ public class loginRegisterActivity extends AppCompatActivity {
 
     TextView tv;
     Button btnIniciarSessao, btnRegistar;
-    String a, b;
+    String a, b, c;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
