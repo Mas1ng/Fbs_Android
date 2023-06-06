@@ -12,34 +12,30 @@
             android:textSize="30dp"
             android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="104dp" android:id="@+id/FBS"/>
+            android:layout_height="90dp" android:id="@+id/FBS"/>
     <EditText
             android:id="@+id/nomeRegistar"
-            android:paddingBottom="20dp"
             android:layout_width="match_parent"
-            android:layout_height="69dp"
+            android:layout_height="40dp"
             android:hint="Nome"/>
     <EditText
             android:id="@+id/ccRegistar"
-            android:paddingBottom="20dp"
             android:layout_width="match_parent"
-            android:layout_height="69dp"
+            android:layout_height="40dp"
             android:hint="cc"/>
     <EditText
             android:id="@+id/emailRegistar"
-            android:paddingBottom="20dp"
             android:layout_width="match_parent"
-            android:layout_height="69dp"
+            android:layout_height="40dp"
             android:hint="Digite o seu email"/>
     <EditText
             android:id="@+id/passRegistar"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="40dp"
             android:hint="Digite a sua palavra passe"
-            android:paddingBottom="20dp"/>
+    />
     <TextView
             android:text="Data de Nascimento"
-            android:textSize="20dp"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -47,7 +43,7 @@
     <DatePicker
             android:id="@+id/dataBirthday"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="164dp"
             android:datePickerMode="spinner"
             android:layout_gravity="center_horizontal"
             android:calendarViewShown="false"

@@ -1,5 +1,6 @@
 package com.example.fbs_android.xml;
 
+import com.example.fbs_android.dto.ClienteDto;
 import com.example.fbs_android.dto.ErrorDto;
 import com.example.fbs_android.dto.FbsDto;
 import com.example.fbs_android.dto.ViagemListDto;
@@ -57,5 +58,18 @@ public class XmlHandler {
             }
         }
         return data;
+    }
+
+    public static String serializeClienteDto2XML(ClienteDto data) {
+        StringWriter writer = new StringWriter();
+        if (data != null) {
+            Serializer serializer = new Persister();
+            try {
+                serializer.write(data, writer);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return writer.toString();
     }
 }

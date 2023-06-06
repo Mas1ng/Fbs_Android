@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     private void getFBSInfoFromWS() {
         pb.setVisibility(ProgressBar.VISIBLE);
         String adress = Utils.getWSAddress(this);
-        String uri = adress + "/fbs"; // é o segundo request mapping
+        String uri = adress+ "/fbs"; // é o segundo request mapping
         final String body = "";
         new Thread() {
             public void run() {
@@ -133,7 +133,6 @@ public class MainActivity extends AppCompatActivity {
                                     break;
                             }
                         }
-                        pb.setVisibility(ProgressBar.GONE);
                     }
                });
             }

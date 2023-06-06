@@ -1,5 +1,6 @@
 package com.example.fbs_android.dto;
 
+import com.example.fbs_android.model.Cliente;
 import com.example.fbs_android.model.Data;
 import com.example.fbs_android.model.Fbs;
 import com.example.fbs_android.model.Viagem;
@@ -30,6 +31,21 @@ public class Mapper {
     }
     public static Data dataDto2Data(DataDto arg){
         Data  obj = new Data(arg.getDia(),arg.getMes(),arg.getAno());
+        return obj;
+    }
+
+    public static DataDto data2DataDto(Data arg){
+        if (arg == null) {
+            return null;
+        }
+        int [] dmy = {0,0,0};
+        arg.getDate(dmy);
+        DataDto  obj = new DataDto(dmy[0],dmy[1],dmy[2]);
+        return obj;
+    }
+    public static ClienteDto cliente2ClienteDto(Cliente args){
+        DataDto data = data2DataDto(args.getData());
+        ClienteDto obj = new ClienteDto(args.getEmail(), args.getNome(), data, args.getCc());
         return obj;
     }
 }
