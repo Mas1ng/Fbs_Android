@@ -29,7 +29,7 @@ import com.example.fbs_android.xml.XmlHandler;
 import java.util.ArrayList;
 
 public class ViagensActivity extends AppCompatActivity {
-    ListView Viagens;
+    ListView lvViagens;
     ProgressBar pBar;
     ArrayList<ViagemListItem> viagens; // Crio um array de que tipo aqui?
     LvAdapterViagens adapter;
