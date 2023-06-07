@@ -16,9 +16,6 @@ import com.example.fbs_android.model.Cliente;
 import com.example.fbs_android.model.Data;
 import com.example.fbs_android.network.*;
 import com.example.fbs_android.xml.XmlHandler;
-import kotlin.OptionalExpectation;
-
-import java.sql.Date;
 
 public class RegistarClienteActivity extends AppCompatActivity {
     TextView nomeRegistar, ccRegistar,emailRegistar,passRegistar;
@@ -32,11 +29,11 @@ public class RegistarClienteActivity extends AppCompatActivity {
         nomeRegistar = findViewById(R.id.nomeRegistar);
         ccRegistar = findViewById(R.id.ccRegistar);
         emailRegistar = findViewById(R.id.emailRegistar);
-        passRegistar = findViewById(R.id.passRegistar);
+        passRegistar = findViewById(R.id.iniciarSessaoPass);
 
         dataBirthday = (DatePicker) findViewById(R.id.dataBirthday);
 
-        btnRegistarC = findViewById(R.id.btnRegistarC);
+        btnRegistarC = findViewById(R.id.btnLoginC);
         btnRegistarC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,6 +65,10 @@ public class RegistarClienteActivity extends AppCompatActivity {
                 }else{
                     Toast.makeText(RegistarClienteActivity.this,exceptionMessage,Toast.LENGTH_SHORT).show();
                 }
+
+                Toast.makeText(RegistarClienteActivity.this,"Inciar Sessão",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(RegistarClienteActivity.this, LoginClienteActivity.class);
+                startActivity(intent);
         }
         });
     }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:padding="10dp">
+    <ProgressBar
+            android:id="@+id/pBar"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+    />
+    <EditText android:id="@+id/etBilhete"
+              android:inputType="text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="1dp"/>
+    <EditText android:id="@+id/etPassageiro"
+              android:inputType="text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="1dp"/>
+    <EditText android:id="@+id/etMala"
+              android:inputType="text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="1dp"/>
+    <ToggleButton
+            android:id="@+id/tbSeguro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seguro"
+            android:textOn="Ativado"
+            android:textOff="Desativado" />
+    <ToggleButton
+            android:id="@+id/tbComida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comida"
+            android:textOn="Ativado"
+            android:textOff="Desativado" />
+
+</LinearLayout>

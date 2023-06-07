@@ -29,7 +29,7 @@
             android:layout_height="40dp"
             android:hint="Digite o seu email"/>
     <EditText
-            android:id="@+id/passRegistar"
+            android:id="@+id/iniciarSessaoPass"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="Digite a sua palavra passe"
@@ -52,5 +52,5 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:layout_centerInParent="true"
-            android:id="@+id/btnRegistarC" android:text="Registar"/>
+            android:id="@+id/btnLoginC" android:text="Registar"/>
 </LinearLayout>

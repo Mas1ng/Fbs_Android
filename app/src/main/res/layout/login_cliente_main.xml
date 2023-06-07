@@ -25,7 +25,7 @@
             android:layout_height="48dp"
             android:hint="Digite o seu email" />
     <EditText
-            android:id="@+id/passRegistar"
+            android:id="@+id/iniciarSessaoPass"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Digite a sua palavra passe" />
@@ -35,7 +35,7 @@
             android:padding="5dp"
             android:text="Login"
             android:layout_centerInParent="true"
-            android:id="@+id/btnRegistarC"/>
+            android:id="@+id/btnLoginC"/>
 
 
 </LinearLayout>
