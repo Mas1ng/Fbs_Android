@@ -20,7 +20,7 @@
               android:layout_weight="1"
               android:padding="10dp"
               android:text="Menu Admin"
-              android:id="@+id/crudViagens"
+              android:id="@+id/dataC"
               android:textSize="16sp"
               android:textStyle="bold"
               android:gravity="center"/>

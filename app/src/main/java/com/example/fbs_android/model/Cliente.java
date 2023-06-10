@@ -4,6 +4,16 @@ import java.io.Serializable;
 
 public class Cliente extends Pessoa implements Serializable {
     private BilheteList bilheteList;
+    private String nome;
+    private Data data;
+    private String email;
+    private String pass;
+    private long cc;
+
+    @Override
+    public long getCc() {
+        return cc;
+    }
 
     public Cliente(String email, String nome, Data data, long cc, String pass, BilheteList bilheteList) {
         super(email, nome, data,cc,pass);
@@ -11,7 +21,7 @@ public class Cliente extends Pessoa implements Serializable {
     }
     public Cliente(String email, String nome, Data data, long cc, String pass) {
         super(email, nome, data,cc,pass);
-        this.bilheteList = new BilheteList();
+        bilheteList = new BilheteList();
     }
 
     public BilheteList getBilhetes(){

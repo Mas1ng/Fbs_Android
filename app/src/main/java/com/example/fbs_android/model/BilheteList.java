@@ -18,4 +18,7 @@ public class BilheteList implements Serializable {
         this.bilhetes = bilhetes;
     }
 
+    public ArrayList<Bilhete> getBilhetes() {
+        return bilhetes;
+    }
 }

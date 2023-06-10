@@ -20,12 +20,12 @@
             android:id="@+id/tv" android:textSize="24sp" android:textStyle="bold" android:gravity="center"
             android:text="Flight Booking System"/>
     <EditText
-            android:id="@+id/nomeRegistar"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Digite o seu email" />
     <EditText
-            android:id="@+id/iniciarSessaoPass"
+            android:id="@+id/pass"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Digite a sua palavra passe" />

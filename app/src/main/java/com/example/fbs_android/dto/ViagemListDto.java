@@ -8,20 +8,20 @@ import java.util.ArrayList;
 @Root(name = "viagens")
 public class ViagemListDto {
     @ElementList(inline = true, required=false)
-    private ArrayList<ViagemListItemDto> viagens;
+    private ArrayList<ViagemDto> viagens;
 
     public ViagemListDto() {
     }
 
-    public ViagemListDto(ArrayList<ViagemListItemDto> students) {
+    public ViagemListDto(ArrayList<ViagemDto> students) {
         this.viagens = students;
     }
 
-    public ArrayList<ViagemListItemDto> getViagens() {
+    public ArrayList<ViagemDto> getViagens() {
         return viagens;
     }
 
-    public void setViagens(ArrayList<ViagemListItemDto> viagens) {
+    public void setViagens(ArrayList<ViagemDto> viagens) {
         this.viagens = viagens;
     }
 }

@@ -5,7 +5,7 @@ import org.simpleframework.xml.Root;
 
 @Root(name = "fbs")
 public class FbsDto {
-    @Element(name = "name")
+    @Element(name = "nome")
     private String nome;
 
     public FbsDto() {

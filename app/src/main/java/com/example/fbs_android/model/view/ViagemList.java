@@ -1,19 +1,21 @@
 package com.example.fbs_android.model.view;
 
+import com.example.fbs_android.model.Viagem;
+
 import java.util.ArrayList;
 
 public class ViagemList {
-    private ArrayList<ViagemListItem> viagens;
+    private ArrayList<Viagem> viagens;
 
-    public ViagemList(ArrayList<ViagemListItem> viagens) {
+    public ViagemList(ArrayList<Viagem> viagens) {
         this.viagens = viagens;
     }
 
-    public ArrayList<ViagemListItem> getViagens() {
+    public ArrayList<Viagem> getViagens() {
         return viagens;
     }
 
-    public void setViagens(ArrayList<ViagemListItem> viagens) {
+    public void setViagens(ArrayList<Viagem> viagens) {
         this.viagens = viagens;
     }
 }

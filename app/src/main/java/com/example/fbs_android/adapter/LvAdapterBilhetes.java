@@ -7,43 +7,43 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 import com.example.fbs_android.R;
+import com.example.fbs_android.model.Bilhete;
 import com.example.fbs_android.model.Viagem;
 
 import java.util.ArrayList;
 
-public class LvAdapterViagens extends BaseAdapter {
+public class LvAdapterBilhetes extends BaseAdapter {
     private Context context;
     private int layoutId;
-    private final ArrayList<Viagem> items;
+    private final ArrayList<Bilhete> items;
 
-    public LvAdapterViagens(Context context, int layoutId, ArrayList<Viagem> items) {
+    public LvAdapterBilhetes(Context context, int layoutId, ArrayList<Bilhete> items) {
         this.context = context;
         this.layoutId = layoutId;
         this.items = items;
     }
-    public void setItems(ArrayList<Viagem> items){
+    public void setItems(ArrayList<Bilhete> items){
         this.items.clear();
         this.items.addAll(items);
     }
-
     @Override
     public int getCount() {
-        return this.items.size();
+        return 0;
     }
 
     @Override
     public Object getItem(int position) {
-        return this.items.get(position);
+        return null;
     }
 
     @Override
     public long getItemId(int position) {
-        return position;
+        return 0;
     }
+
     @Override
-    public View getView(int position, View convertView, ViewGroup parent)
-    {
-        final Viagem row = this.items.get(position);
+    public View getView(int position, View convertView, ViewGroup parent) {
+        final Bilhete row = this.items.get(position);
         View itemView = null;
         if(convertView == null){
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -54,10 +54,8 @@ public class LvAdapterViagens extends BaseAdapter {
 
         TextView tvName = (TextView) itemView.findViewById(R.id.tvName);
         tvName.setText(row.getNomeViagem());
-        TextView tvdataP = (TextView)  itemView.findViewById(R.id.dataP);
-        tvdataP.setText(row.getDataChegada().toString()); // não sei se isto vai funcionar
-        TextView tvdataC = (TextView) itemView.findViewById(R.id.dataC);
-        tvdataC.setText(row.getDataChegada().toString());
+        TextView cc = (TextView)  itemView.findViewById(R.id.CC);
+        cc.setText(row.getCc().toString()); // não sei se isto vai funcionar
         return itemView;
     }
 }

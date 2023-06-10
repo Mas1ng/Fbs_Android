@@ -21,6 +21,7 @@ import com.example.fbs_android.dto.Mapper;
 import com.example.fbs_android.dto.ViagemListDto;
 import com.example.fbs_android.helper.Response;
 import com.example.fbs_android.helper.Utils;
+import com.example.fbs_android.model.Viagem;
 import com.example.fbs_android.model.view.ViagemList;
 import com.example.fbs_android.model.view.ViagemListItem;
 import com.example.fbs_android.network.*;
@@ -31,7 +32,7 @@ import java.util.ArrayList;
 public class ViagensActivity extends AppCompatActivity {
     ListView lvViagens;
     ProgressBar pBar;
-    ArrayList<ViagemListItem> viagens; // Crio um array de que tipo aqui?
+    ArrayList<Viagem> viagens;
     LvAdapterViagens adapter;
     ActivityResultLauncher<Intent> studentActivityLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
@@ -39,7 +40,7 @@ public class ViagensActivity extends AppCompatActivity {
                 @Override
                 public void onActivityResult(ActivityResult result) {
                     if (result.getResultCode() == Activity.RESULT_OK) {
-                        getStudentsFromWS();
+                        getViagensFromWS();
                     }
                 }
             });
@@ -53,7 +54,7 @@ public class ViagensActivity extends AppCompatActivity {
         pBar.setVisibility(ProgressBar.INVISIBLE);
 
         lvViagens = (ListView) findViewById(R.id.asviagens);
-        viagens = new ArrayList<ViagemListItem>(); //como é que o array de estudantes fica preenchido? e se é do tipo StudentListItem como pode ter os detalhes da data de nascimento?
+        viagens = new ArrayList<Viagem>(); //como é que o array de estudantes fica preenchido? e se é do tipo StudentListItem como pode ter os detalhes da data de nascimento?
         adapter = new LvAdapterViagens(this, R.layout.listview_viagens, viagens);
         lvViagens.setAdapter(adapter);
 
@@ -64,14 +65,10 @@ public class ViagensActivity extends AppCompatActivity {
                 Toast.makeText(ViagensActivity.this, "Click: details", Toast.LENGTH_SHORT).show();
                 ViagemListItem studentListItem = (ViagemListItem) adapter.getItem(i);
                 Intent intent = new Intent(ViagensActivity.this, ItemViagemActivity.class);
-                /*intent.putExtra(Utils.MODE,Utils.ACTIVITY_MODE_DETAILS); // que extra é este??
-                intent.putExtra(Utils.ID, viagemListItem.getdataPartida());
-                intent.putExtra(Utils.ID, viagemListItem.getdataChegada());
-                intent.putExtra(Utils.ID, viagemListItem.getName());*/
                 studentActivityLauncher.launch(intent);
             }
         });
-        getStudentsFromWS();
+        getViagensFromWS();
     }
 
     private void setDataOnUi(ViagemList data) {
@@ -83,10 +80,10 @@ public class ViagensActivity extends AppCompatActivity {
         Toast.makeText(ViagensActivity.this, message, Toast.LENGTH_LONG).show();
     }
 
-    private void getStudentsFromWS() {
+    private void getViagensFromWS() {
         pBar.setVisibility(ProgressBar.VISIBLE);
         String address = Utils.getWSAddress(this);
-        String uri = address + "/students";
+        String uri = address + "/viagens";
         final String body = "";
         new Thread() {
             public void run() {

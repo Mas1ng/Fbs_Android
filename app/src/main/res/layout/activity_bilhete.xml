@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+    <ProgressBar
+            android:id="@+id/pb"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+    />
+    <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"/>
+    <EditText android:id="@+id/etNome"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="1dp"/>
+    <TextView
+            android:text="Número de contribuinte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"/>
+    <EditText android:id="@+id/etCC"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="1dp"/>
+
+    <TextView
+            android:text="Tipo de bilhete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"/>
+    <EditText android:id="@+id/etTBilhete"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="1dp"/>
+    <TextView
+            android:text="Tipo de Passageiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"/>
+    <EditText android:id="@+id/etTPassageiro"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="1dp"/>
+
+    <TextView
+            android:text="Preço"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"/>
+    <EditText android:id="@+id/etPreco"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="1dp"/>
+    <TextView
+            android:text="Número do Lugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"/>
+    <EditText android:id="@+id/etNumLugar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="1dp"/>
+    <TextView
+            android:text="Extras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"/>
+    <EditText android:id="@+id/etExtras"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="1dp"/>
+
+
+</LinearLayout>

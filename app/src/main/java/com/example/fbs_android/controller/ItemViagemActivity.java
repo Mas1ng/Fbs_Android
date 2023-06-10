@@ -36,7 +36,7 @@ public class ItemViagemActivity extends AppCompatActivity {
         titulo= findViewById(R.id.titulo);
         nome= findViewById(R.id.tvName);
         dataC= findViewById(R.id.tvdataC);
-        dataP= findViewById(R.id.tvdataP);
+        dataP= findViewById(R.id.dataP);
         companhia= findViewById(R.id.tvCompanhia);
         cidadeC= findViewById(R.id.tvCidadeC);
         cidadeP= findViewById(R.id.tvCidadeP);

@@ -1,15 +1,17 @@
 package com.example.fbs_android.dto;
 
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Order;
 import org.simpleframework.xml.Root;
 
-@Order(elements = {"email","nome","data","cc"})
+@Order(elements = {"email","nome","data","cc","pass"})
 @Root(name ="cliente")
 public class ClienteDto {
 
-    @Element(name = "bilhete")
-    private BilheteListDto bilheteList;
+    //@ElementList(inline = true,required = false)
+    //@Element(name = "bilhete")
+    //private BilheteListDto bilheteList;
 
     @Element(name = "email")
     private String email;
@@ -20,12 +22,15 @@ public class ClienteDto {
     private DataDto data;
     @Element(name = "cc")
     private long cc;
+    @Element(name = "pass")
+    private String pass;
 
-        public ClienteDto(String email, String nome, DataDto data, long cc) {
+        public ClienteDto(String email, String nome, DataDto data, long cc, String pass) {
             this.email = email;
             this.nome = nome;
             this.data = data;
             this.cc=cc;
+            this.pass=pass;
 
         }
 
@@ -47,5 +52,7 @@ public class ClienteDto {
         public long getCc() {
             return cc;
         }
-    }
+
+        public String getPass() { return pass;}
+}
 

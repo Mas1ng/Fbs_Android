@@ -66,6 +66,12 @@ public class Viagem implements Serializable {
         }
     }
 
+    public Viagem(String nomeViagem, Data dataPartida, Data dataChegada) {
+        this.nomeViagem = nomeViagem;
+        this.dataPartida = dataPartida;
+        this.dataChegada = dataChegada;
+    }
+
     public Data getDataPartida() {
         return dataPartida;
     }

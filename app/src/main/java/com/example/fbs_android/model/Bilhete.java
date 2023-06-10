@@ -11,14 +11,21 @@ public class Bilhete implements Serializable {
     TipoBilhete tipoBilhete;
     String cc;
 
+    public Bilhete(int numLugar, String nomeViagem) {
+        this.numLugar = numLugar;
+        this.nomeViagem = nomeViagem;
+    }
 
-    public Bilhete(int numLugar, String nomeViagem, Extras extras, TipoPassageiro tipoPassageiro, TipoBilhete tipoBilhete, String cc) {
-         this.numLugar = numLugar;
-         this.nomeViagem= nomeViagem;
-         this.extras = extras;
-         this.tipoPassageiro = tipoPassageiro;
-         this.tipoBilhete = tipoBilhete;
-         this.cc = cc;
+
+
+    public Bilhete(int preco, int numLugar, String nomeViagem, Extras extras, TipoPassageiro tipoPassageiro, TipoBilhete tipoBilhete, String cc) {
+        this.Preco = preco;
+        this.numLugar = numLugar;
+        this.nomeViagem = nomeViagem;
+        this.extras = extras;
+        this.tipoPassageiro = tipoPassageiro;
+        this.tipoBilhete = tipoBilhete;
+        this.cc = cc;
     }
 
     public Bilhete(int numLugar, String nomeViagem, TipoBilhete tipoBilhete) {
